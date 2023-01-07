@@ -52,6 +52,8 @@ function maxItemAssociation(arr) {
 
 document.querySelector('.idv').innerHTML = maxItemAssociation(input)
 
+console.log(maxItemAssociation(input))
+
 
 
 
@@ -76,5 +78,7 @@ const sum = a => {
 }
 const sum1 = sum(1)(2)(4)(2)(4)(2)(4)(5)() //<= поменяйте значение тут :)
 
-document.querySelector('.ivd').innerHTML = sum1
+document.querySelector('.ivd').innerHTML = sum1  
+
+console.log(sum(1)(2)(4)(2)(4)(2)(4)(5)())
 
