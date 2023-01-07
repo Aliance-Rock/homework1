@@ -76,9 +76,10 @@ const sum = a => {
 	}
 	return func
 }
-const sum1 = sum(1)(2)(4)(2)(4)(2)(4)(5)() //<= поменяйте значение тут :)
 
-document.querySelector('.ivd').innerHTML = sum1  
+
+const sum1 = sum(1)(2)(4)(2)(4)(2)(4)(5)()
+document.querySelector('.ivd').innerHTML = sum1
 
 console.log(sum(1)(2)(4)(2)(4)(2)(4)(5)())
 
