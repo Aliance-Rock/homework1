@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+	margin: 10px auto;
+}
+
+.idv,
+.ivd {
+	width: 500px;
+	height: 100px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 30px 0;
+	background-color: turquoise;
+	font-size: 30px;
+}
