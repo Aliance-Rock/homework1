@@ -64,22 +64,17 @@ console.log(maxItemAssociation(input))
 
 
 // Задание 2.
-const sum = a => {
-	let sum = a
-	const func = b => {
-		if (b) {
-			sum += b
-			return func
-		} else {
-			return sum
-		}
+const sum = (function () {
+	return function sumNumber(value, lastNum = 0) {
+		return value == undefined
+			? lastNum
+			: nextNum => sumNumber(nextNum, lastNum + value)
 	}
-	return func
-}
+})()
 
 
-const sum1 = sum(1)(2)(4)(2)(4)(2)(4)(5)()
+const sum1 = sum(1)(2)(4)(0)(4)(2)(4)(5)()
 document.querySelector('.ivd').innerHTML = sum1
 
-console.log(sum(1)(2)(4)(2)(4)(2)(4)(5)())
+console.log(sum(1)(2)(4)(2)(4)(2)(4)(0)())
 
